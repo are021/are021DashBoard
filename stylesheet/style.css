@@ -213,10 +213,10 @@ img[alt = 'bigpfp']{
     width:75%;
     
 }
-.content-items > div:last-child > div{
+/* .content-items > div:last-child > div{
     margin-top:10px;
     height:85%;
-}
+} */
 
 
 
@@ -242,12 +242,12 @@ img[alt = 'bigpfp']{
     font-size:3rem;
 }
 
-ul{
+.sidebar > ul{
     margin:0;
     padding-left:30px;
 }
 
-li{
+.sidebar > ul > li{
     font-size:1.5rem;
     margin:20px 0px;
     display:flex;
@@ -255,11 +255,11 @@ li{
     gap:10px;
     list-style-type: none;   
 }
-li > svg{
+.sidebar > ul > li > svg{
     width:10%;
 }
 
-li:hover{
+.sidebar > ul > li:hover{
     text-decoration: underline;
     color:blue;
     cursor: pointer;
@@ -288,4 +288,37 @@ li:hover{
 }
 .proj-modification >  a > svg{
     width:80%;
+}
+
+
+.goals{
+    display:grid;
+    grid-template-rows:.5fr .8fr 1fr;
+}
+.goals > div{
+    border-bottom: 2px solid;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.goals > div:first-child{
+    padding-bottom:10px;
+}
+.goals > div > span{
+    font-size : 1rem;
+    color:#dd4949;
+}
+
+.goals > div:last-child , .goals > div:nth-child(2){
+    padding:10px 0px;
+}
+.goals > div:last-child {
+    margin-bottom: 10px;
+}
+
+.learning > div{
+    font-size: 1.3rem;
+    color:#dd4949;
+    padding:10px 0px;
+    border-bottom:2px dotted black;
 }
