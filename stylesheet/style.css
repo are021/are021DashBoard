@@ -31,7 +31,6 @@ body{
 }
 .sidebar{
     grid-row:1/3;
-    background-color: red;
 }
 .content{
     grid-column: 2/-1;
@@ -40,6 +39,9 @@ body{
 /*****Header****/
 
     /****TopBar*****/
+.account-info{
+    font-size:1.4rem;
+}
 .account-info > img[alt = "pfp"]{
     height: auto;
     width:2.5rem;
@@ -121,12 +123,15 @@ img[alt = 'bigpfp']{
 .mainheader > div:first-child{
     display:flex;
     align-items: center;
-    gap:15px;
+    gap:20px;
     font-weight: bold;
 }
 
+.profile > div > .are-text{
+    font-size:2rem;
+}
 .profile > div > .ideas{
-    font-size:.8rem;
+    font-size:1rem;
     font-weight:normal;
 }
 .create-buttons{
@@ -156,6 +161,7 @@ img[alt = 'bigpfp']{
 /****Main Content*****/
 
 .content{ 
+    font-size:2rem;
     padding:20px 10px;
     display:grid;
     grid-template-rows: .3fr 4fr;
@@ -185,6 +191,7 @@ img[alt = 'bigpfp']{
 }
 
 .projects > div, .content-items > div:last-child > div , .content-items > div:nth-child(2){
+    font-size:1.3rem;
     -webkit-box-sizing: border-box;
     border-radius:10px;
     box-sizing:border-box;
@@ -200,11 +207,15 @@ img[alt = 'bigpfp']{
 }
 
 .project-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width:75%;
+    
 }
 .content-items > div:last-child > div{
     margin-top:10px;
-    height:90%;
+    height:85%;
 }
 
 
@@ -212,6 +223,7 @@ img[alt = 'bigpfp']{
 /*Sidebar*/
 
 .sidebar{
+    background-color: rgb(10, 181, 238);
     padding-top:15px;
     /* display:grid;
     grid-template-rows: 1fr 3fr 1fr; */
@@ -251,4 +263,29 @@ li:hover{
     text-decoration: underline;
     color:blue;
     cursor: pointer;
+}
+
+
+
+/*Design the Project Descriptions a bit*/
+
+.description{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:10px;
+    font-size:1rem;
+    line-height: 20px;
+}
+.proj-modification{
+    display: flex;
+    justify-content: flex-end;
+    gap:15px;
+    
+}
+.proj-modification > a{
+    width:10%;
+    display:flex;
+    justify-content: center;
+}
+.proj-modification >  a > svg{
+    width:80%;
 }
